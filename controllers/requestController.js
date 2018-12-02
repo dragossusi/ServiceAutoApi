@@ -5,7 +5,7 @@ var mongoose = require('mongoose'),
 
 //function for getting all available Requests
 exports.list_all_requests = function(req, res){
-    Request.find({}, function(err, Request){
+    Request.find(req.query, function(err, Request){
         if(err)
             res.send(err).status(200);
         res.json(Request);
