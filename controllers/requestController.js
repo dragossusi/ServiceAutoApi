@@ -30,7 +30,8 @@ exports.read_a_request = function(req, res) {
 };
 
 exports.update_a_request = function(req, res) {
-    Request.findOneAndUpdate({_id: req.params.RequestId}, req.body, {new: true}, function(err, Request) {
+    console.log(req.body)
+    Request.findOneAndUpdate({_id: req.params.requestId}, req.body, {new: true}, function(err, Request) {
       if (err)
         res.send(err);
       res.json(Request);
