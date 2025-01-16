@@ -9,6 +9,6 @@
   "author": "Dragos Rachieru",
   "license": "ISC",
   "dependencies": {
-    "mongoose": "^5.13.20"
+    "mongoose": "^8.9.5"
   }
 }
